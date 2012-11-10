@@ -28,26 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.inputText = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalPosts = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PersentOfConversation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.outputText = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // inputText
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(15, 25);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(275, 192);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.inputText.Location = new System.Drawing.Point(15, 25);
+            this.inputText.Name = "inputText";
+            this.inputText.Size = new System.Drawing.Size(275, 192);
+            this.inputText.TabIndex = 1;
+            this.inputText.Text = "";
+            this.inputText.TextChanged += new System.EventHandler(this.inputText_TextChanged);
             // 
             // label1
             // 
@@ -92,50 +89,28 @@
             this.radioButton2.Text = "ICQ";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // outputText
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name,
-            this.TotalPosts,
-            this.PersentOfConversation});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 243);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(398, 199);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // Name
-            // 
-            this.Name.HeaderText = "Name";
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
-            // 
-            // TotalPosts
-            // 
-            this.TotalPosts.HeaderText = "Total Posts";
-            this.TotalPosts.Name = "TotalPosts";
-            this.TotalPosts.ReadOnly = true;
-            // 
-            // PersentOfConversation
-            // 
-            this.PersentOfConversation.HeaderText = "Persent of conversation";
-            this.PersentOfConversation.Name = "PersentOfConversation";
-            this.PersentOfConversation.ReadOnly = true;
+            this.outputText.Location = new System.Drawing.Point(15, 234);
+            this.outputText.Name = "outputText";
+            this.outputText.Size = new System.Drawing.Size(368, 191);
+            this.outputText.TabIndex = 4;
+            this.outputText.Text = "";
+            this.outputText.TextChanged += new System.EventHandler(this.outputText_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 454);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.outputText);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.inputText);
             this.Name = "Form1";
             this.Text = "s";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,15 +118,12 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox inputText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TotalPosts;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PersentOfConversation;
+        private System.Windows.Forms.RichTextBox outputText;
     }
 }
 

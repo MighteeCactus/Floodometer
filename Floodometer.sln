@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloodometerDesktop", "FloodometerDesktop\FloodometerDesktop.csproj", "{F1D320E9-43BA-4332-8DED-799F29DA7DBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FloodometerSkype", "FloodometerSkype\FloodometerSkype.csproj", "{036986B7-24F8-4585-A7AA-01FCA228BE5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{F1D320E9-43BA-4332-8DED-799F29DA7DBA}.Debug|x86.Build.0 = Debug|x86
 		{F1D320E9-43BA-4332-8DED-799F29DA7DBA}.Release|x86.ActiveCfg = Release|x86
 		{F1D320E9-43BA-4332-8DED-799F29DA7DBA}.Release|x86.Build.0 = Release|x86
+		{036986B7-24F8-4585-A7AA-01FCA228BE5D}.Debug|x86.ActiveCfg = Debug|x86
+		{036986B7-24F8-4585-A7AA-01FCA228BE5D}.Debug|x86.Build.0 = Debug|x86
+		{036986B7-24F8-4585-A7AA-01FCA228BE5D}.Release|x86.ActiveCfg = Release|x86
+		{036986B7-24F8-4585-A7AA-01FCA228BE5D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

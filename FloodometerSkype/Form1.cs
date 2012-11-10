@@ -20,5 +20,15 @@ namespace FloodometerSkype
         {
 
         }
+
+        private void outputText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputText_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
